@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations.Schema;
+using Talabat_System.Domain.Entities.Delivery;
 
 namespace Talabat_System.Domain.Entities.Users
 {
-    public class AppUser
+    public class AppUser : IdentityUser
     {
-        public AppUser()
-        {
-            Addresses = new HashSet<Address>();
-        }
-
-
-
-
-        // navigation properties.
-        public virtual ICollection<Address> Addresses { get; set; }
+        public virtual Admin? AdminProfile { get; set; }
+        public virtual Customer? CustomerProfile { get; set; }
+        public virtual Driver? DriverProfile { get; set; }
     }
 }

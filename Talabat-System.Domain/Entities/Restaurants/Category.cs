@@ -8,5 +8,8 @@ namespace Talabat_System.Domain.Entities.Restaurants
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        // Navigation Properties
+        public ICollection<Restaurant> Restaurants { get; set; } = new HashSet<Restaurant>();
     }
 }

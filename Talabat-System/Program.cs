@@ -1,4 +1,6 @@
 
+using Talabat_System.Extensions;
+
 namespace Talabat_System
 {
     public class Program
@@ -12,6 +14,9 @@ namespace Talabat_System
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
+            // connect to the datatbase.
+            builder.Services.ConnectDatabase(builder.Configuration);
 
             var app = builder.Build();
 

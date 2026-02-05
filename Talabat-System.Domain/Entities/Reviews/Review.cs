@@ -11,8 +11,7 @@ namespace Talabat_System.Domain.Entities.Reviews
     public class Review
     {
         public int Id { get; set; }
-        public int OrderId { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public int RestaurentId { get; set; }
         public int Rating { get; set; }
         public string Comment { get; set; }
@@ -20,8 +19,6 @@ namespace Talabat_System.Domain.Entities.Reviews
 
 
         // Navigation Properties
-        [ForeignKey("OrderId")]
-        public Order Order { get; set; } = new();
         [ForeignKey("UserId")]
         public AppUser User { get; set; } = new();
         [ForeignKey("RestaurentId")]

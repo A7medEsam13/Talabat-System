@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Talabat_System.Domain.Entities.Enums
+namespace Talabat_System.Domain.Enums
 {
     public enum NotificationType
     {
