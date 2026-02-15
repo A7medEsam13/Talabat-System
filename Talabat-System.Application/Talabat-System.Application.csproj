@@ -11,4 +11,14 @@
     <ProjectReference Include="..\Talabat-System.Infrastructure\Talabat-System.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\DeliveryServices\" />
+    <Folder Include="Interfaces\Users\" />
+    <Folder Include="Interfaces\ReviewsServices\" />
+    <Folder Include="Interfaces\RestaurentsServices\" />
+    <Folder Include="Interfaces\PaymentsServices\" />
+    <Folder Include="Interfaces\OrdersServices\" />
+    <Folder Include="Interfaces\NotificationsServices\" />
+  </ItemGroup>
+
 </Project>
