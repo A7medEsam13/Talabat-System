@@ -18,6 +18,9 @@ namespace Talabat_System
             // connect to the datatbase.
             builder.Services.ConnectDatabase(builder.Configuration);
 
+            // services registering.
+            builder.Services.RegisterServices();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
