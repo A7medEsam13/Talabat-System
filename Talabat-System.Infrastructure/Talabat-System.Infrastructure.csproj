@@ -9,11 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Repositories\Users\" />
-    <Folder Include="Repositories\Reviews\" />
-    <Folder Include="Repositories\Restaurants\" />
-    <Folder Include="Repositories\Payments\" />
-    <Folder Include="Repositories\Orders\" />
   </ItemGroup>
 
   <ItemGroup>
