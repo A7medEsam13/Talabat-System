@@ -15,6 +15,7 @@ using Talabat_System.Infrastructure.RepositoriesInterfaces.Payments;
 using Talabat_System.Infrastructure.RepositoriesInterfaces.Restaurents;
 using Talabat_System.Infrastructure.RepositoriesInterfaces.Reviews;
 using Talabat_System.Infrastructure.RepositoriesInterfaces.Users;
+using Talabat_System.Infrastructure.UOW;
 
 namespace Talabat_System.Extensions
 {
@@ -30,7 +31,7 @@ namespace Talabat_System.Extensions
                 );
             }
 
-            public void RegisterServices()
+            public void RegisterRepositories()
             {
                 services.AddScoped<IDeliveryRepository, DeliveryRepository>();
                 services.AddScoped<IDriverRepository, DriverRepository>();
@@ -45,6 +46,7 @@ namespace Talabat_System.Extensions
                 services.AddScoped<IReviewRepository, ReviewRepository>();
                 services.AddScoped<IAdminRepository, AdminRepository>();
                 services.AddScoped<ICustomerRepository, CustomerRepository>();
+                services.AddScoped<IUnitOfWork,UnitOfWork>();
             }
         }
     }
